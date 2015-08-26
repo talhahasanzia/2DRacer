@@ -1,14 +1,17 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class Car : MonoBehaviour {
     Quaternion startRotation;
     Quaternion constRotation;
-
-
+   public  Text textMsg;
+   public Text score;
+   float Score=10;
 
 	// Use this for initialization
 	void Start () {
+        textMsg.enabled = false;
         startRotation=transform.rotation;
         constRotation=new Quaternion(startRotation.x,startRotation.y,startRotation.z,startRotation.w);
 	}
@@ -16,8 +19,10 @@ public class Car : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+        Score += 2;
 
 
+        score.text = "Score: " + Score;
         Vector3 newPositionForward=new Vector3(transform.position.x,transform.position.y+5,transform.position.z);
         transform.position = Vector3.Lerp(transform.position, newPositionForward, 2 * Time.deltaTime);
         this.transform.rotation = constRotation;
@@ -38,4 +43,19 @@ public class Car : MonoBehaviour {
 
         }
 	}
+
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+
+        if (collision.gameObject.tag == "Enemy")
+        {
+            textMsg.enabled = true;
+            textMsg.text = "Game Over";
+            this.enabled = false;
+
+        }
+
+
+    }
+    
 }
