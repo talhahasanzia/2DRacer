@@ -16,6 +16,7 @@ public class Car : MonoBehaviour {
   public static bool GameOn = false;
 	// Use this for initialization
 	void Start () {
+        GameOn = false;
         textMsg.enabled = false;
         startRotation=transform.rotation;
         constRotation=new Quaternion(startRotation.x,startRotation.y,startRotation.z,startRotation.w);
@@ -34,17 +35,17 @@ public class Car : MonoBehaviour {
             transform.position = Vector3.Lerp(transform.position, newPositionForward, 2 * Time.deltaTime);
             this.transform.rotation = constRotation;
 
-            if (Input.GetKey(KeyCode.RightArrow) || Input.acceleration.x > 0)
+            if (Input.GetKey(KeyCode.RightArrow) || Input.acceleration.x > 0.1)
             {
-                Vector3 newPosition = new Vector3(transform.position.x + 5, transform.position.y, transform.position.z);
+                Vector3 newPosition = new Vector3(transform.position.x + 2, transform.position.y, transform.position.z);
                 transform.position = Vector3.Lerp(transform.position, newPosition, 2 * Time.deltaTime);
 
 
             }
 
-            if (Input.GetKey(KeyCode.LeftArrow) || Input.acceleration.x < 0)
+            if (Input.GetKey(KeyCode.LeftArrow) || Input.acceleration.x < -0.1)
             {
-                Vector3 newPosition = new Vector3(transform.position.x - 5, transform.position.y, transform.position.z);
+                Vector3 newPosition = new Vector3(transform.position.x - 2, transform.position.y, transform.position.z);
                 transform.position = Vector3.Lerp(transform.position, newPosition, 2 * Time.deltaTime);
 
 

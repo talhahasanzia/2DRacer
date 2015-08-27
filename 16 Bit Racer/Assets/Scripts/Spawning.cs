@@ -22,8 +22,8 @@ public class Spawning : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        
-        
+
+        justBloodyStartTheGame = false;
         
         poses[0] = -1.05f;
         poses[1] = 1.02f;

@@ -6,7 +6,7 @@ public class CameraSet : MonoBehaviour {
     public static bool startGame=false;
 	// Use this for initialization
 	void Start () {
-	
+        startGame = false;
 	}
 	
 	// Update is called once per frame
