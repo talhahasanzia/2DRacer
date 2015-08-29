@@ -14,7 +14,7 @@ public class Enemy : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 
         if(Car.Score>1500)
         Move();
@@ -28,7 +28,7 @@ public class Enemy : MonoBehaviour {
     void Move()
     {
         if(Car.GameOn)
-        transform.Translate(moveDirection * 2 * Time.deltaTime);
+        transform.Translate(moveDirection  * Time.deltaTime);
     
     }
 

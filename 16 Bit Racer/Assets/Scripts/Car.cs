@@ -25,7 +25,7 @@ public class Car : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (GameOn)
         {
@@ -67,38 +67,38 @@ public class Car : MonoBehaviour {
         {
 
 
-            if (Input.acceleration.x > 0 && Input.acceleration.x <=0.1)
+            if (Input.acceleration.x > 0.1 && Input.acceleration.x <=0.2)
             {
                 Vector3 newPosition = new Vector3(transform.position.x + 0.1f, transform.position.y, transform.position.z);
                 transform.position = Vector3.Lerp(transform.position, newPosition, 30 * Time.deltaTime);
             }
-            else if (Input.acceleration.x > 0.1 && Input.acceleration.x <= 0.2)
+            else if (Input.acceleration.x > 0.2 && Input.acceleration.x <= 0.3)
             {
-                Vector3 newPosition = new Vector3(transform.position.x + 0.2f, transform.position.y, transform.position.z);
+                Vector3 newPosition = new Vector3(transform.position.x + 0.3f, transform.position.y, transform.position.z);
                 transform.position = Vector3.Lerp(transform.position, newPosition, 20 * Time.deltaTime);
             }
-            else if (Input.acceleration.x > 0.2 )
+            else if (Input.acceleration.x > 0.3 )
             {
-                Vector3 newPosition = new Vector3(transform.position.x + 0.2f, transform.position.y, transform.position.z);
+                Vector3 newPosition = new Vector3(transform.position.x + 0.5f, transform.position.y, transform.position.z);
                 transform.position = Vector3.Lerp(transform.position, newPosition, 30 * Time.deltaTime);
             }
         }
 
-        else if ((Input.GetKey(KeyCode.LeftArrow) || Input.acceleration.x < -0) && transform.position.x>-2.6)
+        if ((Input.GetKey(KeyCode.LeftArrow) || Input.acceleration.x < -0) && transform.position.x>-2.6)
         {
-            if (Input.acceleration.x < 0 && Input.acceleration.x >= -0.1)
+            if (Input.acceleration.x < -0.1 && Input.acceleration.x >= -0.2)
             {
                 Vector3 newPosition = new Vector3(transform.position.x - 0.1f, transform.position.y, transform.position.z);
                 transform.position = Vector3.Lerp(transform.position, newPosition, 30 * Time.deltaTime);
             }
-            else if (Input.acceleration.x < -0.1 && Input.acceleration.x >= -0.2)
+            else if (Input.acceleration.x < -0.2 && Input.acceleration.x >= -0.3)
             {
-                Vector3 newPosition = new Vector3(transform.position.x - 0.2f, transform.position.y, transform.position.z);
+                Vector3 newPosition = new Vector3(transform.position.x - 0.3f, transform.position.y, transform.position.z);
                 transform.position = Vector3.Lerp(transform.position, newPosition, 20 * Time.deltaTime);
             }
-            else if (Input.acceleration.x < -0.2)
+            else if (Input.acceleration.x < -0.3)
             {
-                Vector3 newPosition = new Vector3(transform.position.x - 0.2f, transform.position.y, transform.position.z);
+                Vector3 newPosition = new Vector3(transform.position.x - 0.5f, transform.position.y, transform.position.z);
                 transform.position = Vector3.Lerp(transform.position, newPosition, 30 * Time.deltaTime);
             }
 

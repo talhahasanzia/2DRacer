@@ -10,7 +10,7 @@ public class CameraSet : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
         if (startGame)
         {
             Vector3 newPositionForward = new Vector3(transform.position.x, Car.transform.position.y + 7, transform.position.z);
