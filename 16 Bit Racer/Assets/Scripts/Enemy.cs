@@ -3,13 +3,49 @@ using System.Collections;
 
 public class Enemy : MonoBehaviour {
 
+
+
+    Vector3 moveDirection;
+
+
 	// Use this for initialization
 	void Start () {
-	
+        moveDirection = transform.right;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-	
+
+        if(Car.Score>1500)
+        Move();
+
+
+
+
 	}
+
+
+    void Move()
+    {
+        if(Car.GameOn)
+        transform.Translate(moveDirection * 2 * Time.deltaTime);
+    
+    }
+
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+
+
+        if (collision.gameObject.tag == "Wall")
+        {
+
+
+            moveDirection = -moveDirection;
+        
+        }
+
+    }
+
+
+    
 }
