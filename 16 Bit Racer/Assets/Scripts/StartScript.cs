@@ -26,7 +26,7 @@ public class StartScript : MonoBehaviour {
     void OnClick()
     {
 
-        //Debug.Log("On click");
+        Debug.Log("On click");
         exitButton.SetActive(false);
         Spawning.justBloodyStartTheGame = true;
         Car.GameOn = true;
