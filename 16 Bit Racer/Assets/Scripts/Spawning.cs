@@ -48,9 +48,12 @@ public class Spawning : MonoBehaviour {
 
 
        
-            Object newObject = Instantiate(obj, newPosition, Quaternion.identity);
+            GameObject newObject = (GameObject)Instantiate(obj, newPosition, Quaternion.identity);
 
-            //Destroy(newObject, 30);
+           // Destroy(newObject, 30);
+
+           
+        
 
 
             if (waitFor > 3)

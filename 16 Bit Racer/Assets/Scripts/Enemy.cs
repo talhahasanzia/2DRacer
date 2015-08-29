@@ -3,13 +3,34 @@ using System.Collections;
 
 public class Enemy : MonoBehaviour {
 
-	// Use this for initialization
+
+    Vector3 moveDirection ;
+    
+    // Use this for initialization
 	void Start () {
-	
+        moveDirection = transform.right;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-	
+
+
+        if (Car.Score > 1500)
+        {
+
+            ;
+        
+        
+        }
+
+
 	}
+
+    void Move()
+    { 
+    
+    
+    
+    
+    }
 }
