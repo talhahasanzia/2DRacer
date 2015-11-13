@@ -12,6 +12,7 @@ public class Car : MonoBehaviour {
 
   public GameObject gameOverText;
   public GameObject restartText;
+	public GameObject PauseButton;
 
   public static bool GameOn = false;
 	// Use this for initialization
@@ -27,18 +28,23 @@ public class Car : MonoBehaviour {
 	// Update is called once per frame
     void FixedUpdate()
     {
-        if (GameOn)
-        {
-            Score += 1;
+        if (GameOn) {
 
-            HandleInput();
+			PauseButton.SetActive (true);
+			Score += 1;
+
+			HandleInput ();
             
-            score.text = "Score: " + Score;
-            Vector3 newPositionForward = new Vector3(transform.position.x, transform.position.y + 5, transform.position.z);
-            transform.position = Vector3.Lerp(transform.position, newPositionForward, 2 * Time.deltaTime);
-            this.transform.rotation = constRotation;
+			score.text = "Score \n" + Score;
+			Vector3 newPositionForward = new Vector3 (transform.position.x, transform.position.y + 5, transform.position.z);
+			transform.position = Vector3.Lerp (transform.position, newPositionForward, 2 * Time.deltaTime);
+			this.transform.rotation = constRotation;
             
-        }
+		} else {
+		
+			PauseButton.SetActive(false);
+		
+		}
     }
 
     public void OnCollisionEnter2D(Collision2D collision)
@@ -46,7 +52,7 @@ public class Car : MonoBehaviour {
 
         if (collision.gameObject.tag == "Enemy")
         {
-
+			PauseButton.SetActive(false);
             GameOn = false;
             textMsg.enabled = true;
             textMsg.text = "Game Over";
@@ -67,17 +73,17 @@ public class Car : MonoBehaviour {
         {
 
 
-            if (Input.acceleration.x > 0.1 && Input.acceleration.x <=0.2)
+            if (Input.acceleration.x > 0.05 && Input.acceleration.x <=0.15)
             {
                 Vector3 newPosition = new Vector3(transform.position.x + 0.1f, transform.position.y, transform.position.z);
                 transform.position = Vector3.Lerp(transform.position, newPosition, 30 * Time.deltaTime);
             }
-            else if (Input.acceleration.x > 0.2 && Input.acceleration.x <= 0.3)
+            else if (Input.acceleration.x > 0.15 && Input.acceleration.x <= 0.25)
             {
                 Vector3 newPosition = new Vector3(transform.position.x + 0.3f, transform.position.y, transform.position.z);
                 transform.position = Vector3.Lerp(transform.position, newPosition, 20 * Time.deltaTime);
             }
-            else if (Input.acceleration.x > 0.3 )
+            else if (Input.acceleration.x > 0.25 )
             {
                 Vector3 newPosition = new Vector3(transform.position.x + 0.5f, transform.position.y, transform.position.z);
                 transform.position = Vector3.Lerp(transform.position, newPosition, 30 * Time.deltaTime);
@@ -86,17 +92,17 @@ public class Car : MonoBehaviour {
 
         if ((Input.GetKey(KeyCode.LeftArrow) || Input.acceleration.x < -0) && transform.position.x>-2.6)
         {
-            if (Input.acceleration.x < -0.1 && Input.acceleration.x >= -0.2)
+            if (Input.acceleration.x < -0.05 && Input.acceleration.x >= -0.15)
             {
                 Vector3 newPosition = new Vector3(transform.position.x - 0.1f, transform.position.y, transform.position.z);
                 transform.position = Vector3.Lerp(transform.position, newPosition, 30 * Time.deltaTime);
             }
-            else if (Input.acceleration.x < -0.2 && Input.acceleration.x >= -0.3)
+            else if (Input.acceleration.x < -0.15 && Input.acceleration.x >= -0.25)
             {
                 Vector3 newPosition = new Vector3(transform.position.x - 0.3f, transform.position.y, transform.position.z);
                 transform.position = Vector3.Lerp(transform.position, newPosition, 20 * Time.deltaTime);
             }
-            else if (Input.acceleration.x < -0.3)
+            else if (Input.acceleration.x < -0.25)
             {
                 Vector3 newPosition = new Vector3(transform.position.x - 0.5f, transform.position.y, transform.position.z);
                 transform.position = Vector3.Lerp(transform.position, newPosition, 30 * Time.deltaTime);

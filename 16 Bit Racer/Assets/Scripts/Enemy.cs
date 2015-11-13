@@ -16,8 +16,12 @@ public class Enemy : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
 
-        if(Car.Score>1500)
+		if (Car.GameOn)
+		transform.Translate (transform.up *3f* Time.deltaTime);
+
+		if(Car.Score>1500)
         Move();
+
 
 
 
@@ -27,9 +31,12 @@ public class Enemy : MonoBehaviour {
 
     void Move()
     {
-        if(Car.GameOn)
-        transform.Translate(moveDirection  * Time.deltaTime);
-    
+        if (Car.GameOn) {
+			transform.Translate (moveDirection * Time.deltaTime);
+
+		}
+
+
     }
 
     public void OnCollisionEnter2D(Collision2D collision)

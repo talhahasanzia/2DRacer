@@ -1,0 +1,31 @@
+﻿<xapCache source="F:\Github\2DRacer\16 Bit Racer\Windows Phone\Racer\Bin\ARM\Debug\Racer_Debug_ARM.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="13-Nov-15 2:56:37 PM">
+  <file source="F:\Github\2DRacer\16 Bit Racer\Windows Phone\Racer\obj\ARM\Debug\Racer.dll" archivePath="Racer.dll" lastWriteTime="13-Nov-15 2:56:17 PM" />
+  <file source="F:\Github\2DRacer\16 Bit Racer\Windows Phone\Racer\SplashScreenImage.jpg" archivePath="SplashScreenImage.jpg" lastWriteTime="09-Jul-15 7:11:02 AM" />
+  <file source="F:\Github\2DRacer\16 Bit Racer\Windows Phone\Racer\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="01-Jul-15 9:02:26 PM" />
+  <file source="F:\Github\2DRacer\16 Bit Racer\Windows Phone\Racer\Assets\Tiles\FlipCycleTileLarge.png" archivePath="Assets\Tiles\FlipCycleTileLarge.png" lastWriteTime="01-Jul-15 9:02:26 PM" />
+  <file source="F:\Github\2DRacer\16 Bit Racer\Windows Phone\Racer\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="01-Jul-15 9:02:26 PM" />
+  <file source="F:\Github\2DRacer\16 Bit Racer\Windows Phone\Racer\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="01-Jul-15 9:02:26 PM" />
+  <file source="F:\Github\2DRacer\16 Bit Racer\Windows Phone\Racer\Assets\Tiles\IconicTileSmall.png" archivePath="Assets\Tiles\IconicTileSmall.png" lastWriteTime="01-Jul-15 9:02:26 PM" />
+  <file source="F:\Github\2DRacer\16 Bit Racer\Windows Phone\Racer\Data\mainData" archivePath="Data\mainData" lastWriteTime="13-Nov-15 2:52:35 PM" />
+  <file source="F:\Github\2DRacer\16 Bit Racer\Windows Phone\Racer\Data\managedAssemblies.txt" archivePath="Data\managedAssemblies.txt" lastWriteTime="13-Nov-15 2:53:17 PM" />
+  <file source="F:\Github\2DRacer\16 Bit Racer\Windows Phone\Racer\Data\PlayerConnectionConfigFile" archivePath="Data\PlayerConnectionConfigFile" lastWriteTime="13-Nov-15 2:52:42 PM" />
+  <file source="F:\Github\2DRacer\16 Bit Racer\Windows Phone\Racer\Data\Resources\unity default resources" archivePath="Data\Resources\unity default resources" lastWriteTime="11-Jul-15 12:58:32 PM" />
+  <file source="F:\Github\2DRacer\16 Bit Racer\Windows Phone\Racer\Data\Resources\unity_builtin_extra" archivePath="Data\Resources\unity_builtin_extra" lastWriteTime="13-Nov-15 2:52:42 PM" />
+  <file source="F:\Github\2DRacer\16 Bit Racer\Windows Phone\Racer\Data\sharedassets0.assets" archivePath="Data\sharedassets0.assets" lastWriteTime="13-Nov-15 2:52:35 PM" />
+  <file source="F:\Github\2DRacer\16 Bit Racer\Windows Phone\Racer\Bin\ARM\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="13-Nov-15 2:56:20 PM" />
+  <file source="F:\Github\2DRacer\16 Bit Racer\Windows Phone\Racer\Bin\ARM\Debug\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="01-Jul-15 9:02:26 PM" />
+  <file source="F:\Github\2DRacer\16 Bit Racer\Windows Phone\Racer\Bin\ARM\Debug\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="01-Jul-15 9:02:26 PM" />
+  <file source="F:\Github\2DRacer\16 Bit Racer\Windows Phone\Racer\Assembly-CSharp-firstpass.dll" archivePath="Assembly-CSharp-firstpass.dll" lastWriteTime="13-Nov-15 2:53:16 PM" />
+  <file source="F:\Github\2DRacer\16 Bit Racer\Windows Phone\Racer\Assembly-CSharp.dll" archivePath="Assembly-CSharp.dll" lastWriteTime="13-Nov-15 2:53:16 PM" />
+  <file source="F:\Github\2DRacer\16 Bit Racer\Windows Phone\Players\ARM\Release\BridgeInterface.winmd" archivePath="BridgeInterface.winmd" lastWriteTime="11-Jul-15 1:14:28 PM" />
+  <file source="F:\Github\2DRacer\16 Bit Racer\Windows Phone\Racer\UnityEngine.Analytics.dll" archivePath="UnityEngine.Analytics.dll" lastWriteTime="13-Nov-15 2:53:16 PM" />
+  <file source="F:\Github\2DRacer\16 Bit Racer\Windows Phone\Racer\UnityEngine.dll" archivePath="UnityEngine.dll" lastWriteTime="13-Nov-15 2:53:17 PM" />
+  <file source="F:\Github\2DRacer\16 Bit Racer\Windows Phone\Racer\UnityEngine.Networking.dll" archivePath="UnityEngine.Networking.dll" lastWriteTime="13-Nov-15 2:53:17 PM" />
+  <file source="F:\Github\2DRacer\16 Bit Racer\Windows Phone\Racer\UnityEngine.UI.dll" archivePath="UnityEngine.UI.dll" lastWriteTime="13-Nov-15 2:53:17 PM" />
+  <file source="F:\Github\2DRacer\16 Bit Racer\Windows Phone\Players\ARM\Release\UnityPlayer.winmd" archivePath="UnityPlayer.winmd" lastWriteTime="11-Jul-15 1:16:50 PM" />
+  <file source="F:\Github\2DRacer\16 Bit Racer\Windows Phone\Players\ARM\Release\WinRTBridge.dll" archivePath="WinRTBridge.dll" lastWriteTime="11-Jul-15 1:14:28 PM" />
+  <file source="F:\Github\2DRacer\16 Bit Racer\Windows Phone\Racer\WinRTLegacy.dll" archivePath="WinRTLegacy.dll" lastWriteTime="13-Nov-15 2:53:17 PM" />
+  <file source="F:\Github\2DRacer\16 Bit Racer\Windows Phone\Players\ARM\Release\BridgeInterface.dll" archivePath="BridgeInterface.dll" lastWriteTime="11-Jul-15 1:14:28 PM" />
+  <file source="F:\Github\2DRacer\16 Bit Racer\Windows Phone\Players\ARM\Release\UnityPlayer.dll" archivePath="UnityPlayer.dll" lastWriteTime="11-Jul-15 1:17:10 PM" />
+  <file source="F:\Github\2DRacer\16 Bit Racer\Windows Phone\Racer\Bin\ARM\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="13-Nov-15 2:56:32 PM" />
+</xapCache>
